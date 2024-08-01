@@ -57,3 +57,80 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+/* Estilos específicos para a seção de reportagem */
+
+/* Estilo para a seção da reportagem */
+.reportagem {
+    background-color: #ffffff; /* Fundo branco para contraste com o fundo geral do site */
+    padding: 2em; /* Espaçamento interno */
+    margin: 1em 0; /* Margem para separar da parte superior e inferior */
+    border-radius: 8px; /* Cantos arredondados para um visual mais suave */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra leve para destacar a seção */
+}
+
+/* Título principal da reportagem */
+.reportagem h2 {
+    font-size: 1.8em; /* Tamanho do texto */
+    color: #4CAF50; /* Cor verde para combinar com o tema */
+    margin-bottom: 1em; /* Espaço abaixo do título */
+    font-weight: bold; /* Negrito para destaque */
+}
+
+/* Subtítulos dentro da reportagem */
+.reportagem h3 {
+    font-size: 1.4em; /* Tamanho do texto para subtítulos */
+    color: #333; /* Cor escura para legibilidade */
+    margin-top: 1.5em; /* Espaço acima do subtítulo */
+    margin-bottom: 0.5em; /* Espaço abaixo do subtítulo */
+    font-weight: bold; /* Negrito para destaque */
+}
+
+/* Parágrafos dentro da reportagem */
+.reportagem p {
+    font-size: 1em; /* Tamanho do texto para parágrafos */
+    line-height: 1.6; /* Altura da linha para melhor legibilidade */
+    margin-bottom: 1em; /* Espaço abaixo dos parágrafos */
+    color: #555; /* Cor do texto para um contraste suave */
+}
+
+/* Destaques dentro dos parágrafos */
+.reportagem p strong {
+    font-weight: bold; /* Negrito para destaque */
+    color: #333; /* Cor escura para destaque */
+}
+
+/* Informações adicionais (data, autor) */
+.reportagem p strong + p {
+    font-style: italic; /* Itálico para informações adicionais */
+    color: #777; /* Cor mais clara para texto secundário */
+    margin-bottom: 1em; /* Espaço abaixo das informações adicionais */
+}
+
+/* Estilo para imagens dentro da reportagem */
+.reportagem img {
+    display: block; /* Faz com que a imagem se comporte como um bloco */
+    margin: 1.5em auto; /* Espaço acima e abaixo da imagem, centraliza horizontalmente */
+    max-width: 100%; /* Garante que a imagem não exceda a largura do container */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px; /* Cantos arredondados para a imagem */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra leve para a imagem */
+}
+
+/* Adicional: Texto ao redor da imagem, se necessário */
+.reportagem .img-left {
+    float: left; /* Faz a imagem flutuar à esquerda */
+    margin: 0 1em 1em 0; /* Espaço ao redor da imagem */
+}
+
+.reportagem .img-right {
+    float: right; /* Faz a imagem flutuar à direita */
+    margin: 0 0 1em 1em; /* Espaço ao redor da imagem */
+}
+
+/* Limpa flutuação depois das imagens */
+.reportagem::after {
+    content: "";
+    display: table;
+    clear: both;
+}
